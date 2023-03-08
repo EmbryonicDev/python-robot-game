@@ -265,7 +265,7 @@ class GetCoin:
             pygame.draw.rect(self.window, orange,
                              (0, self.height+3, self.width, self.info_board/2-3))
             # new game
-            game_text = get_plain_text(self.game_font, 'New Game', blue)
+            game_text = get_plain_text(self.game_font, 'New Game - F2', blue)
             self.window.blit(game_text, (25, self.height + 10))
             # pause game
             game_text = get_plain_text(self.game_font, 'Pause - Space', blue)
