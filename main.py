@@ -475,7 +475,10 @@ class GetCoin:
                 self.bonus_coin = self.get_bonus_coin()
 
             # bonus coin caught by Robot
-            if self.bonus_coin.hit_robot(self.bot.footprint):
+            if (
+                self.timer.seconds in range(60, 66)
+                and self.bonus_coin.hit_robot(self.bot.footprint)
+            ):
                 update_luck(self.bonus_coin.dict['luck'])
                 # Hide coin when caught
                 self.bonus_coin.catch_coin()
