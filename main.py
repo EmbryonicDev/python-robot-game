@@ -332,7 +332,7 @@ class GetCoin:
                 return pygame.draw.rect(self.window, black,
                                         (self.width/2-game_text.get_width()/2-8,
                                          self.total_height-self.luck_board-self.bonus_board*0.5-game_text.get_height() /
-                                         2-8,
+                                         2,
                                          game_text.get_width()+16,
                                          game_text.get_height()+8))
 
