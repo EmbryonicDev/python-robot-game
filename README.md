@@ -1,6 +1,6 @@
 # python-robot-game
 
-![image](https://user-images.githubusercontent.com/95647817/223758503-ad01ee9a-2c48-4cb9-88f6-d010ec8e80b9.png)
+![image](https://user-images.githubusercontent.com/95647817/223766778-cc9fe4b2-5892-47c7-b4e3-2765252c82af.png)
 
 ### The game starts off with a robot (you), 6 coins, and 1 monster. 
 ### Hitting the monsters will reduce your health. 
