@@ -1,5 +1,6 @@
 import pygame
 import random
+import re
 import math
 from Timer import Timer
 from ScreenObjects import ScreenObject, MovingObject, MovingMonster, MovingCoin, BonusCoin, Robot, SaveIcon
@@ -92,9 +93,13 @@ class GetCoin:
                     key_dict[event.key]()
 
             def submit_score():
-                self.update_scores(self.player.name)
-                self.high_scores.show_high_scores = True
-                self.player.inputting_name = False
+                # Remove double spaces, and pre / post white spaces
+                self.player.name = re.sub(' +', ' ', self.player.name.strip())
+                # only submit name longer than 2 characters
+                if len(self.player.name) > 1:
+                    self.update_scores(self.player.name)
+                    self.high_scores.show_high_scores = True
+                    self.player.inputting_name = False
 
             # handle user input for high score
             if (self.game_over
