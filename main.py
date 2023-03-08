@@ -54,7 +54,6 @@ class GetCoin:
         self.player = Player()
         self.high_scores = HighScores()
         self.high_scores.get_new_game_scores()
-        self.high_scores.show_high_scores = False
         self.release_coins()
         self.release_monsters()
 
