@@ -1,0 +1,36 @@
+*Back to base:
+    After going through Door
+*Start game with one monster
+*Make sure door prints above screen with hidden
+*stop timer when game is paused
+*Disable pause game on game over
+*create method to create new BonusCoin
+*move all object contact to Robot
+*Make separate class for moving monsters & move appropriate methods from MovingObject to MovingMonster
+*Delete 5 points per monster touch
+*Create variable for: [self.width, self.height]
+*Update event handler - https://pygame.readthedocs.io/en/latest/1_intro/intro.html
+*print door on opposite side of bot
+*increase accuracy of object contact with robot
+*Release coins on opposite side of robot
+*-Display bonus-board on game over / make sure bgc is black
+*change color of game over / game paused text     
+*move key commands above text for: points/level/health, + color = blue                   
+*-Flash red screen 1 second before bonus round is over
+* change bonus text background color to dark grey, and increase size
+*use get_text() for draw window elements
+
+Add lambda formulas where possible
+Add high score & save to text file
+- increase padding around bonus text
+-create line height variables for all board text
+-rename: handle_bonus_ball -> handle_bonus_coin
+*-make sure frozen object is completely off the screen. maybe a fixed -100, -100 position
+
+Secret coin:
+    *freeze monsters
+    *edible monsters
+    *pop 50% monsters
+    *slow moving monsters
+    *full health
+    *super slow motion
