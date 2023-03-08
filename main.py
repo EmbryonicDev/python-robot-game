@@ -230,12 +230,12 @@ class GetCoin:
             ):
                 # high score user prompt text
                 game_text = get_plain_text(
-                    self.heading_font, "New High Score! Enter your Name: ", high_score_color)
+                    self.game_font, "High Score! Enter your Name with at least 2 Letters: ", high_score_color)
                 game_text2 = get_plain_text(
                     self.heading_font, self.player.name, high_score_color)
                 # text background - high score
                 pygame.draw.rect(self.window, high_score_bgc,
-                                 (self.width/2-game_text.get_width() / 2-8, self.height*0.25, game_text.get_width()+8, (game_text.get_height()*2)+8))
+                                 (self.width/2-game_text.get_width() / 2-8, self.height*0.25, game_text.get_width()+8, (game_text2.get_height()*2)+8))
                 # high score user prompt
                 self.window.blit(game_text, (self.width/2-game_text.get_width() /
                                              2, self.height*.25))
