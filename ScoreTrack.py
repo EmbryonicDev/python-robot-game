@@ -48,7 +48,7 @@ class Player:
         self.bonus_record[power] += 1
 
     def __repr__(self):
-        return f"{'{:15}'.format(self.name)}{'{:<8}'.format(self.level)}{'{:<8}'.format(self.points)}{'{:<1}'.format(self.luck_count['luck'])}%"
+        return f"{'{:15}'.format(self.name)}{'{:<8}'.format(self.points)}{'{:<8}'.format(self.level)}{'{:<1}'.format(self.luck_count['luck'])}%"
 
 
 class HighScores:
